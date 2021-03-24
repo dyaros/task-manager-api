@@ -92,7 +92,7 @@ test('8. Should upload avatar image', async() => {
         .expect(200)
     const user = await User.findById(userOneId)
     expect(user.avatar).toEqual(expect.any(Buffer)) 
-})
+}) 
 
 test('9. Should update valid user fields', async () => {
         await request(app)
