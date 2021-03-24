@@ -11,7 +11,7 @@ const sendWelcomeEmail = (email, name) => {
     //     subject: 'Thanks for joining in!',
     //     text: 'Welcome to the app, $(name). Let me know how you get along with the app.'
     // })
-    console.log('welcome email sent')
+    //console.log('welcome email sent')
 }
 
 
@@ -22,7 +22,7 @@ const sendCancelationEmail = (email, name) => {
     //     subject: 'Sorry to see you go!',
     //     text: 'Goodbye, $(name). I hope to see you back soon.'
     // })
-    console.log('cancelation email sent')
+    //console.log('cancelation email sent')
 }
 
 module.exports = {

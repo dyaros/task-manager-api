@@ -115,6 +115,9 @@ router.post('/users/me/avatar', auth, upload.single('upload'), async (req, res) 
     req.user.avatar = buffer
     await req.user.save()
     res.send()
+}, (error, req, res, next) => {
+    // Example sends Json error message 
+    res.status(400).send({ error: error.message })
 })
 
 router.delete('/users/me/avatar', auth, upload.single('upload'), async (req, res) => {
